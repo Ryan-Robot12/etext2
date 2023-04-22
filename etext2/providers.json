@@ -1,0 +1,89 @@
+{
+  "att": {
+    "sms": "txt.att.net",
+    "mms": "mms.att.net",
+    "mms_support": true
+  },
+  "boost": {
+    "sms": "sms.myboostmobile.com",
+    "mms": "myboostmobile.com",
+    "mms_support": true
+  },
+  "c_spire": {
+    "sms": "cspire1.com",
+    "mms_support": false
+  },
+  "cricket": {
+    "sms": "sms.cricketwireless.net ",
+    "mms": "mms.cricketwireless.net",
+    "mms_support": true
+  },
+  "consumer_cellular": {
+    "sms": "mailmymobile.net",
+    "mms_support": false
+  },
+  "google_project_fi": {
+    "sms": "msg.fi.google.com",
+    "mms_support": true
+  },
+  "metro": {
+    "sms": "mymetropcs.com",
+    "mms_support": true
+  },
+  "mint": {
+    "sms": "mailmymobile.net",
+    "mms_support": false
+  },
+  "page_plust": {
+    "sms": "vtext.com",
+    "mms": "mypixmessages.com",
+    "mms_support": true
+  },
+  "republic": {
+    "sms": "text.republicwireless.com",
+    "mms_support": false
+  },
+  "sprint": {
+    "sms": "messaging.sprintpcs.com",
+    "mms": "pm.sprint.com",
+    "mms_support": true
+  },
+  "straight_talk": {
+    "sms": "vtext.com",
+    "mms": "mypixmessages.com",
+    "mms_support": true
+  },
+  "t_mobile": {
+    "sms": "tmomail.net",
+    "mms_support": true
+  },
+  "ting": {
+    "sms": "message.ting.com",
+    "mms_support": false
+  },
+  "tracfone": {
+    "sms": "",
+    "mms": "mmst5.tracfone.com",
+    "mms_support": true
+  },
+  "us_cellular": {
+    "sms": "email.uscc.net",
+    "mms": "mms.uscc.net",
+    "mms_support": true
+  },
+  "verizon": {
+    "sms": "vtext.com",
+    "mms": "vzwpix.com",
+    "mms_support": true
+  },
+  "virgin_mobile": {
+    "sms": "vmobl.com",
+    "mms": "vmpix.com",
+    "mms_support": true
+  },
+  "xfinity": {
+    "sms": "vtext.com",
+    "mms": "mypixmessages.com",
+    "mms_support": true
+  }
+}
