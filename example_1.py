@@ -7,10 +7,10 @@ Dependencies:
 
 Instructions for running:
 - Change Set EMAIL below
-- Set PASS in the Secrets tab
+- Set PASS as an environmental variable
 - Run the code
 - Text your email (e.g. send "testing" to your_email@domain.com)
-- Your phone should get a text with the content in uppercase
+- Your phone should get a text in return with the content in uppercase
 """
 
 EMAIL = "email@domain.com"
