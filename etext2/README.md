@@ -6,14 +6,7 @@ Created by [smallguy89](https://pypi.org/user/smallguy89/) and [EpicCodeWizard](
 - Sync and async SMS and MMS sending.
 - `on_message` decorator to create and run bots.
 ## Installation
-Python 3.8 or higher is required.
-```bash
-pip3 install etext2
-```
-or
-```bash
-pip install etext2
-```
+Python 3.8 or higher is required. Soon to be on PyPI but not yet
 
 ## Quickstart
 ```py
