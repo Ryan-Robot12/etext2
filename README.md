@@ -29,13 +29,13 @@ handler = EmailHandler(email="email@domain.com", password="your_password")
 ```
 ### Sending an SMS Message
 ```py
-handler.send_message(phone_number, text_body, subject="", receiver_provider="verizon", files=[])
+handler.send_message(phone_number, text_body, subject="", carrier="verizon", files=[])
 ```
 Arguments:
 - ```phone_number``` - Number to send the text to. Unformatted or formatted accepted.
 - ```text_body``` - Body of the text.
 - ```subject``` - Subject of the message. Will be formatted as "(subject) text_body".
-- ```receiver_provider```: Can be one of `['att', 'boost', 'c_spire', 'cricket', 'consumer_cellular', 'google_project_fi', 'metro', 'mint', 'page_plust', 'republic', 'sprint', 'straight_talk', 't_mobile', 'ting', 'tracfone', 'us_cellular', 'verizon', 'virgin_mobile', 'xfinity']` (NOTE: `verzion` and `t_mobile` work the best for US numbers).
+- ```carrier```: Can be one of `['att', 'boost', 'c_spire', 'cricket', 'consumer_cellular', 'google_project_fi', 'metro', 'mint', 'page_plust', 'republic', 'sprint', 'straight_talk', 't_mobile', 'ting', 'tracfone', 'us_cellular', 'verizon', 'virgin_mobile', 'xfinity']` (NOTE: `verzion` and `t_mobile` work the best for US numbers).
 - ```files```: List of files to send via MMS. The source of the file can be bytes, a path string, or a URL string.
 
 Returns:
@@ -44,7 +44,7 @@ Returns:
 
 Sample call:
 ```py
-handler.send_message("1234567890", "content", subject="Send using etext2", receiver_provider="verizon")
+handler.send_message("1234567890", "content", subject="Send using etext2", carrier="verizon")
 ```
 ### Sending an MMS message
 Use the same function as above, just attach files with the `files` parameter.
@@ -57,7 +57,7 @@ Arguments:
 - ```phone_number``` - Number to send the text to. Unformatted or formatted accepted.
 - ```text_body``` - Body of the text.
 - ```subject``` - Subject of the message. Will be formatted as "(subject) text_body".
-- ```receiver_provider```: Can be one of `['att', 'boost', 'c_spire', 'cricket', 'consumer_cellular', 'google_project_fi', 'metro', 'mint', 'page_plust', 'republic', 'sprint', 'straight_talk', 't_mobile', 'ting', 'tracfone', 'us_cellular', 'verizon', 'virgin_mobile', 'xfinity']` (NOTE: `verzion` and `t_mobile` work the best for US numbers).
+- ```carrier```: Can be one of `['att', 'boost', 'c_spire', 'cricket', 'consumer_cellular', 'google_project_fi', 'metro', 'mint', 'page_plust', 'republic', 'sprint', 'straight_talk', 't_mobile', 'ting', 'tracfone', 'us_cellular', 'verizon', 'virgin_mobile', 'xfinity']` (NOTE: `verzion` and `t_mobile` work the best for US numbers).
 - ```files```: List of files to send via MMS. The source of the file can be bytes, a path string, or a URL string
 
 Returns:
@@ -120,8 +120,7 @@ Returns:
     - ```download_dir``` - Directory to download the attachments to
     - ```ignore_txt``` - Whether or not to ignore .txt files. Defaults to true because some providers send the body of their messages in a .txt file.
   - Returns:
-    - ```None``` if the response from imaplib's ```.fetch``` functon was not "OK"
-    - Otherwise, a list of paths to the files downloaded
+    - List of paths to the downloaded files
 - ```print(str(message))```
   - The Message class has the equivalent of a toString function that returns the message dictionary as a string
   - Example:
