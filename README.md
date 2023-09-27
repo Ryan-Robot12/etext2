@@ -35,7 +35,7 @@ Arguments:
 - ```phone_number``` - Number to send the text to. Unformatted or formatted accepted.
 - ```text_body``` - Body of the text.
 - ```subject``` - Subject of the message. Will be formatted as "(subject) text_body".
-- ```carrier```: Can be one of `['att', 'boost', 'c_spire', 'cricket', 'consumer_cellular', 'google_project_fi', 'metro', 'mint', 'page_plust', 'republic', 'sprint', 'straight_talk', 't_mobile', 'ting', 'tracfone', 'us_cellular', 'verizon', 'virgin_mobile', 'xfinity']` (NOTE: `verzion` and `t_mobile` work the best for US numbers).
+- ```carrier```: Can be one of `['att', 'boost', 'c_spire', 'cricket', 'consumer_cellular', 'google_project_fi', 'metro', 'mint', 'page_plust', 'republic', 'sprint', 'straight_talk', 't_mobile', 'ting', 'tracfone', 'us_cellular', 'verizon', 'virgin_mobile', 'xfinity']` (NOTE: `verizon` and `t_mobile` work the best for US numbers).
 - ```files```: List of files to send via MMS. The source of the file can be bytes, a path string, or a URL string.
 
 Returns:
@@ -57,7 +57,7 @@ Arguments:
 - ```phone_number``` - Number to send the text to. Unformatted or formatted accepted.
 - ```text_body``` - Body of the text.
 - ```subject``` - Subject of the message. Will be formatted as "(subject) text_body".
-- ```carrier```: Can be one of `['att', 'boost', 'c_spire', 'cricket', 'consumer_cellular', 'google_project_fi', 'metro', 'mint', 'page_plust', 'republic', 'sprint', 'straight_talk', 't_mobile', 'ting', 'tracfone', 'us_cellular', 'verizon', 'virgin_mobile', 'xfinity']` (NOTE: `verzion` and `t_mobile` work the best for US numbers).
+- ```carrier```: Can be one of `['att', 'boost', 'c_spire', 'cricket', 'consumer_cellular', 'google_project_fi', 'metro', 'mint', 'page_plust', 'republic', 'sprint', 'straight_talk', 't_mobile', 'ting', 'tracfone', 'us_cellular', 'verizon', 'virgin_mobile', 'xfinity']` (NOTE: `verizon` and `t_mobile` work the best for US numbers).
 - ```files```: List of files to send via MMS. The source of the file can be bytes, a path string, or a URL string
 
 Returns:
